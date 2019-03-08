@@ -1,0 +1,4 @@
+ffmpeg -i your_input.mp4 -an -vcodec libx264 -crf 23 your_input.h264
+
+ffmpeg -framerate 24 -i your_input.h264 -c copy your_output.mp4
+

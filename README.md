@@ -30,6 +30,9 @@ cd DeepStream_Release/sources/apps/sample_apps/Deepstream_tool
 ```
 here you can see the on screen display. Very interesting. If you are interested in keeping the osd to file, you can add -o option to the command like -o output.mp4.
 
+# FAQ
+> * Q. For some mp4 files, the codec return error.
+A. Mostly, this results from the h264 bitstream encoding, you can check your mp4 file, it should be h264 encoded mp4 file, you can change the encoding format to avc1. The main difference from h264 and avc1 format is that the former encodes H.264 bitstream without start codes and the latter encodes H.264 bitstream with start codes. You can refer to tools/ffmpeg.txt to reencode your mp4 file.
 
 
 # Contact
